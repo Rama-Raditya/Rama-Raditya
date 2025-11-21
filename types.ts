@@ -17,6 +17,8 @@ export interface ProfileData {
   showStats: boolean;
   showStreaks: boolean;
   showTrophies: boolean;
+  showVisitorCount: boolean;
+  showTopLangs: boolean;
   theme: string;
 }
 

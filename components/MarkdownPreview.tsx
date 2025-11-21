@@ -17,8 +17,11 @@ const MarkdownPreview: React.FC<MarkdownPreviewProps> = ({ data, markdown }) => 
     <div className="bg-white text-gray-900 p-8 rounded-lg shadow-lg border border-gray-200 max-w-4xl mx-auto font-sans">
       {/* Mock GitHub Header */}
       <div className="border-b pb-4 mb-6">
-        <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-2">
-          Hi there <span className="animate-bounce">👋</span>, I'm {data.name}
+        <h1 className="text-3xl font-bold text-gray-900 flex flex-col md:flex-row items-start md:items-center gap-4">
+          <span>Hi there <span className="animate-bounce inline-block">👋</span>, I'm {data.name}</span>
+          {data.showVisitorCount && (
+             <img src={`https://komarev.com/ghpvc/?username=${data.socials.github}&label=Profile%20Views&color=0e75b6&style=flat`} alt="Profile Views" className="h-6" />
+          )}
         </h1>
       </div>
 
@@ -79,7 +82,7 @@ const MarkdownPreview: React.FC<MarkdownPreviewProps> = ({ data, markdown }) => 
       </div>
 
       {/* Stats */}
-      {(data.showStats || data.showStreaks || data.showTrophies) && (
+      {(data.showStats || data.showStreaks || data.showTrophies || data.showTopLangs) && (
         <div>
             <h3 className="text-xl font-semibold mb-4 border-b pb-2">GitHub Stats</h3>
             <div className="flex flex-wrap gap-2 items-start">
@@ -89,10 +92,15 @@ const MarkdownPreview: React.FC<MarkdownPreviewProps> = ({ data, markdown }) => 
                 {data.showStreaks && (
                     <img src={`https://github-readme-streak-stats.herokuapp.com/?user=${data.socials.github}&theme=${data.theme}`} alt="Streaks" className="h-40" />
                 )}
-                 {data.showTrophies && (
-                    <img src={`https://github-profile-trophy.vercel.app/?username=${data.socials.github}&theme=${data.theme.replace('dark', 'onedark')}&no-frame=true&column=3`} alt="Trophies" className="h-40" />
+                {data.showTopLangs && (
+                    <img src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${data.socials.github}&layout=compact&theme=${data.theme}`} alt="Top Langs" className="h-40" />
                 )}
             </div>
+            {data.showTrophies && (
+                <div className="mt-4">
+                     <img src={`https://github-profile-trophy.vercel.app/?username=${data.socials.github}&theme=${data.theme.replace('dark', 'onedark')}&no-frame=true&column=3`} alt="Trophies" className="h-40" />
+                </div>
+            )}
         </div>
       )}
     </div>

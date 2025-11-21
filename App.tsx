@@ -11,7 +11,8 @@ import {
   Briefcase, 
   Terminal, 
   Palette,
-  CheckCircle2
+  CheckCircle2,
+  BarChart3
 } from 'lucide-react';
 import { ProfileData, TechStack } from './types';
 import { generateProfileBio } from './services/geminiService';
@@ -20,10 +21,10 @@ import MarkdownPreview from './components/MarkdownPreview';
 // Default Data based on User Request
 const INITIAL_STATE: ProfileData = {
   name: "Muhammad Rama Raditya",
-  title: "Vocational Student (SMK RPL)",
-  subtitle: "I build websites, I code in PHP & JS, Always learning new tech",
+  title: "Vocational Student (SMK RPL Grade 12)",
+  subtitle: "Software Engineering Student, PHP & MySQL Developer, Frontend Enthusiast",
   location: "Ponorogo, Jawa Timur",
-  about: "I am a Grade 12 student majoring in Software Engineering (RPL). I have a strong passion for web development and creating interactive user experiences. I enjoy solving problems with code and am currently expanding my knowledge in modern frontend frameworks.",
+  about: "I am a 17-year-old student majoring in Software Engineering (RPL) at SMK. Based in Ponorogo, East Java, I am passionate about full-stack web development. I have experience building dynamic websites using PHP, MySQL, and modern CSS frameworks like Tailwind and Bootstrap.",
   skills: [
     TechStack.HTML, 
     TechStack.CSS, 
@@ -42,7 +43,9 @@ const INITIAL_STATE: ProfileData = {
   },
   showStats: true,
   showStreaks: true,
-  showTrophies: false,
+  showTrophies: true,
+  showVisitorCount: true,
+  showTopLangs: true,
   theme: "radical" // stats theme
 };
 
@@ -98,6 +101,8 @@ const App: React.FC = () => {
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=58A6FF&background=00000000&center=true&vCenter=true&width=435&lines=${encodeURIComponent(typingLines)})
 
+${profile.showVisitorCount ? `![Visitor Count](https://komarev.com/ghpvc/?username=${profile.socials.github}&label=Profile%20Views&color=0e75b6&style=flat)` : ''}
+
 </div>
 
 <div align="center">
@@ -129,6 +134,7 @@ ${profile.about}
 
 ${profile.showStats ? `![GitHub Stats](https://github-readme-stats.vercel.app/api?username=${profile.socials.github}&show_icons=true&theme=${profile.theme})` : ''}
 ${profile.showStreaks ? `![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=${profile.socials.github}&theme=${profile.theme})` : ''}
+${profile.showTopLangs ? `![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=${profile.socials.github}&layout=compact&theme=${profile.theme})` : ''}
 
 </div>
 
@@ -336,11 +342,11 @@ ${profile.socials.website ? `[![Website](https://img.shields.io/badge/website-00
 
                 <div className="border-t border-github-border pt-6">
                   <h3 className="font-medium mb-4 flex items-center gap-2">
-                    <Palette size={16} /> Appearance
+                    <Palette size={16} /> Appearance & Stats
                   </h3>
                   
                   <div className="mb-4">
-                     <label className="block text-sm text-gray-400 mb-2">Color Theme (Stats & Icons)</label>
+                     <label className="block text-sm text-gray-400 mb-2">Color Theme</label>
                      <select 
                         value={profile.theme}
                         onChange={(e) => handleInputChange('theme', e.target.value)}
@@ -352,7 +358,7 @@ ${profile.socials.website ? `[![Website](https://img.shields.io/badge/website-00
                      </select>
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <label className="flex items-center gap-2 cursor-pointer">
                       <input 
                         type="checkbox" 
@@ -360,7 +366,7 @@ ${profile.socials.website ? `[![Website](https://img.shields.io/badge/website-00
                         onChange={(e) => handleInputChange('showStats', e.target.checked)}
                         className="rounded border-github-border bg-github-dark text-github-blue focus:ring-0"
                       />
-                      <span>Show GitHub Stats Card</span>
+                      <span>Show Overall Stats</span>
                     </label>
                     <label className="flex items-center gap-2 cursor-pointer">
                       <input 
@@ -371,7 +377,16 @@ ${profile.socials.website ? `[![Website](https://img.shields.io/badge/website-00
                       />
                       <span>Show Commit Streak</span>
                     </label>
-                     <label className="flex items-center gap-2 cursor-pointer">
+                    <label className="flex items-center gap-2 cursor-pointer">
+                      <input 
+                        type="checkbox" 
+                        checked={profile.showTopLangs}
+                        onChange={(e) => handleInputChange('showTopLangs', e.target.checked)}
+                        className="rounded border-github-border bg-github-dark text-github-blue focus:ring-0"
+                      />
+                      <span>Show Top Languages</span>
+                    </label>
+                    <label className="flex items-center gap-2 cursor-pointer">
                       <input 
                         type="checkbox" 
                         checked={profile.showTrophies}
@@ -379,6 +394,15 @@ ${profile.socials.website ? `[![Website](https://img.shields.io/badge/website-00
                         className="rounded border-github-border bg-github-dark text-github-blue focus:ring-0"
                       />
                       <span>Show Trophies</span>
+                    </label>
+                    <label className="flex items-center gap-2 cursor-pointer">
+                      <input 
+                        type="checkbox" 
+                        checked={profile.showVisitorCount}
+                        onChange={(e) => handleInputChange('showVisitorCount', e.target.checked)}
+                        className="rounded border-github-border bg-github-dark text-github-blue focus:ring-0"
+                      />
+                      <span>Show Visitor Count</span>
                     </label>
                   </div>
                 </div>
