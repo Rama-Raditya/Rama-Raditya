@@ -2,7 +2,7 @@
 
 # Hi there, I'm Muhammad Rama Raditya 👋
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=58A6FF&background=00000000&center=true&vCenter=true&width=435&lines=Vocational%20HIGH%20SCHOOL%20Student%20%F0%9F%91%A8%E2%80%8D%F0%9F%8E%93%3BWeb%20Developer%20%F0%9F%92%BB%3BPHP%20%26%20MySQL%20Enthusiast%20%F0%9F%90%98%3BPonorogo%20Native%20%F0%9F%87%AE%F0%9F%87%A9)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=58A6FF&background=00000000&center=true&vCenter=true&width=435&lines=Vocational%20High%20School%20Student%20%F0%9F%91%A8%E2%80%8D%F0%9F%8E%93%3BWeb%20Developer%20%F0%9F%92%BB%3BPHP%20%26%20MySQL%20Enthusiast%20%F0%9F%90%98%3BPonorogo%20Native%20%F0%9F%87%AE%F0%9F%87%A9)
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=Rama-Raditya&label=Profile%20Views&color=0e75b6&style=flat)
 
