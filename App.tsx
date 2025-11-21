@@ -35,10 +35,10 @@ const INITIAL_STATE: ProfileData = {
     TechStack.MySQL
   ],
   socials: {
-    github: "rama-raditya",
-    linkedin: "https://linkedin.com/in/rama-raditya",
-    instagram: "https://instagram.com/rama.r",
-    email: "rama@example.com",
+    github: "Rama-Raditya",
+    linkedin: "https://linkedin.com/in/muhammad-rama-raditya",
+    instagram: "https://instagram.com/rmaradtya",
+    email: "ramaraditya4371@gmail.com",
     website: ""
   },
   showStats: true,
@@ -137,12 +137,6 @@ ${profile.showStreaks ? `![GitHub Streak](https://github-readme-streak-stats.her
 ${profile.showTopLangs ? `![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=${profile.socials.github}&layout=compact&theme=${profile.theme})` : ''}
 
 </div>
-
-${profile.showTrophies ? `
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=${profile.socials.github}&theme=${profile.theme === 'radical' ? 'flat' : 'onedark'}&no-frame=true&column=7"/>
-</div>
-` : ''}
 
 ---
 
