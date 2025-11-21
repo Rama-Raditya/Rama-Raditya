@@ -14,7 +14,7 @@
 
 ### 👨‍💻 About Me
 
-Hi! I'm Muhammad Rama Raditya, a 17-year-old Software Engineering (RPL) student in Grade 12 at SMK. Based in Ponorogo, East Java, I am passionate about web development. I specialize in building responsive websites using HTML, CSS, JavaScript, and PHP with databases like MySQL. I enjoy working with frameworks like Bootstrap and Tailwind CSS to create modern user interfaces.
+Hi! I'm Muhammad Rama Raditya, a 17-year-old Software Engineering (RPL) student in Grade 12 at SMK PGRI 2 PONOROGO. Based in Ponorogo, East Java, I am passionate about web development. I specialize in building responsive websites using HTML, CSS, JavaScript, and PHP with databases like MySQL. I enjoy working with frameworks like Bootstrap and Tailwind CSS to create modern user interfaces.
 
 - 🔭 I’m currently working on **School Final Projects**
 - 🌱 I’m currently learning **React, Laravel & System Design**
@@ -53,8 +53,8 @@ Hi! I'm Muhammad Rama Raditya, a 17-year-old Software Engineering (RPL) student 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rama-raditya)
-[![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/rama.r)
+[![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/rmardtya_)
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rama@example.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramaraditya4371@gmail.com)
 
 </div>

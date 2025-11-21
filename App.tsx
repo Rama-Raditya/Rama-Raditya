@@ -174,8 +174,8 @@ ${profile.socials.website ? `[![Website](https://img.shields.io/badge/website-00
           <div className="flex items-center gap-3">
             <Layout className="w-8 h-8 text-github-blue" />
             <div>
-              <h1 className="text-xl font-bold text-white">ProReadMe Generator</h1>
-              <p className="text-xs text-gray-400">For Muhammad Rama Raditya</p>
+              <h1 className="text-xl font-bold text-white">Profile</h1>
+              <p className="text-xs text-gray-400">Muhammad Rama Raditya</p>
             </div>
           </div>
           <div className="flex gap-2">
