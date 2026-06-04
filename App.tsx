@@ -32,7 +32,14 @@ const INITIAL_STATE: ProfileData = {
     TechStack.Bootstrap, 
     TechStack.Tailwind, 
     TechStack.PHP, 
-    TechStack.MySQL
+    TechStack.MySQL,
+    TechStack.NextJS,
+    TechStack.React,
+    TechStack.Laravel,
+    TechStack.Python,
+    TechStack.Java,
+    TechStack.Vue,
+    TechStack.Node
   ],
   socials: {
     github: "Rama-Raditya",
@@ -132,9 +139,9 @@ ${profile.about}
 
 <div align="center">
 
-${profile.showStats ? `![GitHub Stats](https://github-readme-stats.vercel.app/api?username=${profile.socials.github}&show_icons=true&theme=${profile.theme})` : ''}
+${profile.showStats ? `![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=${profile.socials.github}&show_icons=true&theme=${profile.theme})` : ''}
 ${profile.showStreaks ? `![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=${profile.socials.github}&theme=${profile.theme})` : ''}
-${profile.showTopLangs ? `![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=${profile.socials.github}&layout=compact&theme=${profile.theme})` : ''}
+${profile.showTopLangs ? `![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=${profile.socials.github}&layout=compact&theme=${profile.theme})` : ''}
 
 </div>
 

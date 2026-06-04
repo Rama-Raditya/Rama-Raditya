@@ -28,6 +28,7 @@ export enum TechStack {
   JavaScript = 'javascript',
   TypeScript = 'typescript',
   React = 'react',
+  NextJS = 'nextjs',
   Vue = 'vue',
   Angular = 'angular',
   Node = 'nodejs',
