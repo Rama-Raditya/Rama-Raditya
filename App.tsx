@@ -21,10 +21,10 @@ import MarkdownPreview from './components/MarkdownPreview';
 // Default Data based on User Request
 const INITIAL_STATE: ProfileData = {
   name: "Muhammad Rama Raditya",
-  title: "Vocational Student (SMK RPL Grade 12)",
-  subtitle: "Software Engineering Student, PHP & MySQL Developer, Frontend Enthusiast",
+  title: "Full-Stack Developer & Vocational Student",
+  subtitle: "Software Engineering Student, Full-Stack Web Developer, Tech Enthusiast",
   location: "Ponorogo, Jawa Timur",
-  about: "I am a 17-year-old student majoring in Software Engineering (RPL) at SMK. Based in Ponorogo, East Java, I am passionate about full-stack web development. I have experience building dynamic websites using PHP, MySQL, and modern CSS frameworks like Tailwind and Bootstrap.",
+  about: "I am a 17-year-old student majoring in Software Engineering (RPL) at SMK in Ponorogo, East Java. I am deeply passionate about full-stack web development and building impactful applications. With experience across a wide range of modern technologies—including React, Next.js, Vue, Node.js, Laravel, Python, and Java—I enjoy tackling complex problems and creating seamless user experiences. Always eager to learn, collaborate, and build the future of the web!",
   skills: [
     TechStack.HTML, 
     TechStack.CSS, 
@@ -53,7 +53,7 @@ const INITIAL_STATE: ProfileData = {
   showTrophies: true,
   showVisitorCount: true,
   showTopLangs: true,
-  theme: "radical" // stats theme
+  theme: "tokyonight" // stats theme
 };
 
 // Available themes for Stats
